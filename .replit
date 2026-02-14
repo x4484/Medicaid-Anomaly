@@ -35,5 +35,5 @@ externalPort = 80
 
 [deployment]
 deploymentTarget = "autoscale"
-run = ["npx", "next", "start", "-H", "0.0.0.0", "-p", "5000"]
-build = ["npx", "next", "build"]
+run = ["bash", "-c", "pnpm run start -- -H 0.0.0.0 -p 5000"]
+build = ["bash", "-c", "pnpm run build"]

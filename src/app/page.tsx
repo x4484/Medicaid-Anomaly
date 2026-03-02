@@ -529,13 +529,36 @@ export default function Home() {
         <RatiosSection />
         <Methodology />
 
-        <footer className="py-12 border-t border-zinc-800 text-center text-zinc-600 text-xs">
-          <p>
-            Analysis generated from HHS Medicaid Provider Spending open data
-            (Feb 14, 2025). Provider identities from NPI Registry (NPPES).
-            This analysis identifies statistical anomalies and does not
-            constitute an accusation of fraud.
-          </p>
+        <footer className="gidorah-footer">
+          <div className="gidorah-footer__inner">
+            <div className="gidorah-footer__brand">
+              <img
+                src="images/Gidorah-Logo-PNG-White.png"
+                alt="Gidorah"
+                className="gidorah-footer__logo"
+                width="60"
+              />
+              <span className="gidorah-footer__text">
+                By{" "}
+                <a
+                  href="https://gidorah.com"
+                  className="gidorah-footer__link"
+                >
+                  GIDORAH
+                </a>
+                <br />
+                Research Studio
+              </span>
+            </div>
+            <div className="gidorah-footer__meta">
+              <span>Anomaly Report</span>
+              <span>February 2026</span>
+              <span>
+                (This analysis identifies statistical anomalies and does not
+                constitute an accusation of fraud.)
+              </span>
+            </div>
+          </div>
         </footer>
       </main>
     </div>

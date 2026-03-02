@@ -550,13 +550,15 @@ export default function Home() {
                 Research Studio
               </span>
             </div>
-            <div className="gidorah-footer__meta">
-              <span>Anomaly Report</span>
-              <span>February 2026</span>
-              <span>
-                (This analysis identifies statistical anomalies and does not
-                constitute an accusation of fraud.)
-              </span>
+            <div className="gidorah-footer__right">
+              <div className="gidorah-footer__meta">
+                <span>Anomaly Report</span>
+                <span>February 2026</span>
+              </div>
+              <p className="gidorah-footer__disclaimer">
+                This analysis identifies statistical anomalies and does not
+                constitute an accusation of fraud.
+              </p>
             </div>
           </div>
         </footer>

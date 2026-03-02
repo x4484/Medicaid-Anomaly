@@ -18,13 +18,14 @@ html {
 .gidorah-footer {
   border-top: 1px solid #27272a;
   background: #000;
-  padding: 24px 32px;
+  padding: 40px 32px;
+  margin-top: 48px;
 }
 .gidorah-footer__inner {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .gidorah-footer__brand {
@@ -56,19 +57,39 @@ html {
 .gidorah-footer__link:hover {
   color: #fe4901;
 }
+.gidorah-footer__right {
+  text-align: right;
+}
 .gidorah-footer__meta {
   display: flex;
   gap: 24px;
   font-size: 12px;
   color: #a1a1aa;
+  justify-content: flex-end;
+}
+.gidorah-footer__disclaimer {
+  font-size: 11px;
+  color: #52525b;
+  margin-top: 8px;
+  max-width: 400px;
+  line-height: 1.4;
+  text-align: right;
+  margin-left: auto;
 }
 @media (max-width: 600px) {
   .gidorah-footer__inner {
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
+    text-align: center;
+  }
+  .gidorah-footer__right {
     text-align: center;
   }
   .gidorah-footer__meta {
     justify-content: center;
+  }
+  .gidorah-footer__disclaimer {
+    text-align: center;
+    margin-left: 0;
   }
 }
